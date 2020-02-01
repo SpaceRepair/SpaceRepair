@@ -37,9 +37,9 @@ public class SpawnHoles : MonoBehaviour
 
     private void SpawnAHole(GameObject hole)
     {
-        Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
+        //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
 
-        var newHole = Instantiate(holePrefab, hole.transform, hole.transform);
-        newHole.transform.position = new Vector3(newHole.transform.position.x, newHole.transform.position.y, 0);
+        var newHole = Instantiate(holePrefab);
+        newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
     }
 }
