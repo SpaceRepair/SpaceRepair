@@ -17,12 +17,17 @@ public class Scrap : MonoBehaviour
         {
             HoverToPlayer();
         }
+        else
+        {
+            transform.RotateAround(transform.parent.position, Vector3.forward, 30 * Time.deltaTime);
+        }
     }
 
     public void StopFollowing()
     {
         shouldFollowPlayer = false;
         Destroy(GetComponent<Rigidbody2D>());
+        Destroy(GetComponent<Collider2D>());
     }
 
     private void HoverToPlayer()
