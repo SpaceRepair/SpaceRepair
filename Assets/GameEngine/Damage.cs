@@ -7,7 +7,6 @@ public class Damage : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField] private Image damageBar;
-
     [SerializeField] private int maxDamage = 1;
     
     // Start is called before the first frame update
@@ -16,6 +15,7 @@ public class Damage : MonoBehaviour
         maxDamage = 1; // Kiek daugiausiai zalos gali spaceship gaut.
         damage = 0; // Pradzioj žaidimo laivas sveikas.
         UpdateDamage();
+        MakeDamage(0.1f);
     }
 
     // Makes damage to the ship

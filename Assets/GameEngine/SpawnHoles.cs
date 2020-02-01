@@ -9,10 +9,13 @@ public class SpawnHoles : MonoBehaviour
     private List<GameObject> PlacedHoles;
 
     [SerializeField]
-    private float period = 3.0f;
+    private float period = 6.0f;
 
     [SerializeField]
     private Transform holePrefab;
+
+    [SerializeField] 
+    private Damage damageController;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +38,11 @@ public class SpawnHoles : MonoBehaviour
             nextActionTime = Time.time + period;
             SpawnAHole( holes[Random.Range(0, holes.Length)] );
         }
+    }
+
+    public void RemoveAHole()
+    {
+        // Removes a hole
     }
 
     private void SpawnAHole(GameObject hole)
