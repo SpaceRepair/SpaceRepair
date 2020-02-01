@@ -6,6 +6,7 @@ public class SpawnHoles : MonoBehaviour
 {
     private float nextActionTime = 0f; // Keisti jeigu skyle atsiranda su animacija.
     private GameObject[] holes;
+    private List<GameObject> PlacedHoles;
 
     [SerializeField]
     private float period = 3.0f;
@@ -17,6 +18,7 @@ public class SpawnHoles : MonoBehaviour
     void Start()
     {
         holes = GameObject.FindGameObjectsWithTag("Hole");
+        PlacedHoles = new List<GameObject>();
 
         /*if (holes.Length == 0)
         {
@@ -37,9 +39,25 @@ public class SpawnHoles : MonoBehaviour
 
     private void SpawnAHole(GameObject hole)
     {
-        Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
+        //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
+        if (! HoleExists(hole))
+        {
+            var newHole = Instantiate(holePrefab);
+            newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
+            PlacedHoles.Add(hole);
+        }
+    }
 
-        var newHole = Instantiate(holePrefab, hole.transform, hole.transform);
-        newHole.transform.position = new Vector3(newHole.transform.position.x, newHole.transform.position.y, 0);
+    private bool HoleExists(GameObject hole)
+    {
+        foreach (var item in PlacedHoles)
+        {
+            if (item.transform.position == hole.transform.position)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }
