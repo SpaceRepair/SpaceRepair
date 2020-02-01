@@ -5,16 +5,14 @@ using UnityEngine;
 public class Hole : MonoBehaviour
 {
     public bool isPlayerStanding;
-    // Start is called before the first frame update
+
+    private int CurrentHp { get; set; }
+
+    private int MaxHp { get; set; } = 2;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CurrentHp = MaxHp;
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -35,7 +33,7 @@ public class Hole : MonoBehaviour
 
     public void FillMyself(GameObject scrap)
     {
-        scrap.transform.parent = transform;
+        //scrap.transform.parent = transform;
         //scrap.transform.position = new Vector2(0f, 0f);
         var renderer = GetComponent<SpriteRenderer>();
         // NOT WORKING
@@ -43,5 +41,18 @@ public class Hole : MonoBehaviour
         // scrap.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         //scrap.transform.ve
         renderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 0.5f));
+    }
+
+    public void DealDamage()
+    {
+        CurrentHp--;
+        var scale = CurrentHp / (float)MaxHp;
+        if (scale == 0)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        transform.localScale = new Vector2(scale, scale);
     }
 }
