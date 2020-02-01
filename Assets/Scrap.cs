@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Scrap : MonoBehaviour
 {
+    private bool shouldFollowPlayer = true;
     public float minDistance = 0.7f;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +13,16 @@ public class Scrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HoverToPlayer();
+        if (shouldFollowPlayer)
+        {
+            HoverToPlayer();
+        }
+    }
+
+    public void StopFollowing()
+    {
+        shouldFollowPlayer = false;
+        Destroy(GetComponent<Rigidbody2D>());
     }
 
     private void HoverToPlayer()
