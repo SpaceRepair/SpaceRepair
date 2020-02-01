@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
     public int score;
     public Text scoreText;
     private float nextActionTime = 0f;
-    public float period = 1.0f; // 1 sekundė.
+    [SerializeField] private float period = 1.0f; // 1 sekundė.
 
 
     // Start is called before the first frame update
