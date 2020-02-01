@@ -49,6 +49,7 @@ public class Hole : MonoBehaviour
         var scale = CurrentHp / (float)MaxHp;
         if (scale == 0)
         {
+            GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
             Destroy(gameObject);
             return;
         }

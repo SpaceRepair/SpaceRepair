@@ -64,7 +64,7 @@ public class SpawnHoles : MonoBehaviour
 
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
-            damageController.MakeDamage(0.1f);
+            damageController.DealDamage(0.1f);
 
         }
     }

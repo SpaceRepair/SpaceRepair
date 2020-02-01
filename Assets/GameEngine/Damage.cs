@@ -18,9 +18,16 @@ public class Damage : MonoBehaviour
     }
 
     // Makes damage to the ship
-    public void MakeDamage(float amount)
+    public void DealDamage(float amount)
     {
         damage += amount;
+        UpdateDamage();
+        CheckForGameOver();
+    }
+
+    public void RemoveDamage(float amount)
+    {
+        damage -= amount;
         UpdateDamage();
         CheckForGameOver();
     }
