@@ -10,6 +10,11 @@ public class Hole : MonoBehaviour
 
     private int MaxHp { get; set; } = 2;
 
+    public bool ConsoleType = false;
+
+    public Sprite FixedConsoleImage;
+    public GameObject SecretWall;
+
     void Start()
     {
         CurrentHp = MaxHp;
@@ -35,26 +40,40 @@ public class Hole : MonoBehaviour
     {
         //scrap.transform.parent = transform;
         //scrap.transform.position = new Vector2(0f, 0f);
-        scrap.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
         var renderer = GetComponent<SpriteRenderer>();
         // NOT WORKING
         // scrap.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         // scrap.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         //scrap.transform.ve
-        renderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 0.5f));
+        if (!ConsoleType)
+        {
+            renderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 0.5f));
+            scrap.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
+        }
     }
 
     public void DealDamage()
     {
         CurrentHp--;
-        var scale = CurrentHp / (float)MaxHp;
-        if (scale == 0)
+        if (ConsoleType)
         {
-            GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
-            Destroy(gameObject);
-            return;
+            if (CurrentHp == 0)
+            {
+                GetComponent<SpriteRenderer>().sprite = FixedConsoleImage;
+            }
+            SecretWall.transform.localScale = new Vector3(1,30,1);
         }
+        else
+        {
+            var scale = CurrentHp / (float)MaxHp;
+            if (scale == 0)
+            {
+                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
+                Destroy(gameObject);
+                return;
+            }
 
-        transform.localScale = new Vector2(scale, scale);
+            transform.localScale = new Vector2(scale, scale);
+        }
     }
 }
