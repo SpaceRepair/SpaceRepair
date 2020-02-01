@@ -1,5 +1,8 @@
-using System.Collections;
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +36,8 @@ public class Player : MonoBehaviour, IMovable
     public float magnetDistance = 3f;
     public float magnetStrength = 2f;
 
+    public List<GameObject> scraps = new List<GameObject>();
+
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -62,7 +67,9 @@ public class Player : MonoBehaviour, IMovable
             {
                 if (hole.GetComponent<Hole>().isPlayerStanding)
                 {
-                    hole.GetComponent<Hole>().FillMyself();
+                    ScrapCount--;
+                    Debug.Log(ScrapCount);
+                    hole.GetComponent<Hole>().FillMyself(scraps.First());
                 }
             }
     }
@@ -154,6 +161,7 @@ public class Player : MonoBehaviour, IMovable
     {
         if (other.gameObject.tag == "Scrap" && other.transform.parent != transform)
         {
+            scraps.Add(other.gameObject);
             other.transform.parent = transform;
             other.transform.GetComponent<Scrap>()?.StopFollowing();
             ScrapCount++;

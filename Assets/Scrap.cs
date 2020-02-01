@@ -28,6 +28,7 @@ public class Scrap : MonoBehaviour
         shouldFollowPlayer = false;
         Destroy(GetComponent<Rigidbody2D>());
         Destroy(GetComponent<Collider2D>());
+        //GetComponent<Rigidbody2D>().isKinematic = true;
     }
 
     private void HoverToPlayer()
