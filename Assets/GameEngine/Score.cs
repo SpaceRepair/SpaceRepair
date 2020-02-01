@@ -7,22 +7,27 @@ public class Score : MonoBehaviour
 {
     public int score;
     public Text scoreText;
+    private float nextActionTime = 0f;
+    public float period = 1.0f; // 1 sekundė.
+
 
     // Start is called before the first frame update
     void Start()
     {
         score = 0;
-        UpdateScore();
     }
 
-    public void AddScore(int amount)
+    void Update()
     {
-        score += amount;
-        UpdateScore();
+        if (Time.time > nextActionTime) 
+        {
+            nextActionTime = Time.time + period;
+            UpdateScore();
+        }
     }
 
-    private void UpdateScore()
+    void UpdateScore()
     {
-        scoreText.text = "Score: " + score;
+        scoreText.text = "Score: " + score++;
     }
 }
