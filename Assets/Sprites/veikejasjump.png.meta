@@ -1,0 +1,811 @@
+fileFormatVersion: 2
+guid: 92f569f6eecfeca4fa14dd3055da0d10
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4841623826041533600
+    second: veikejasjump_0
+  - first:
+      213: -5726298510955847739
+    second: veikejasjump_1
+  - first:
+      213: 6331574138759582789
+    second: veikejasjump_2
+  - first:
+      213: -3103247899863714059
+    second: veikejasjump_3
+  - first:
+      213: -8985444449405750519
+    second: veikejasjump_4
+  - first:
+      213: -798106631359115087
+    second: veikejasjump_5
+  - first:
+      213: 3218636644016476035
+    second: veikejasjump_6
+  - first:
+      213: 5166023302248244941
+    second: veikejasjump_7
+  - first:
+      213: 7737572320205152975
+    second: veikejasjump_8
+  - first:
+      213: -485761469774344793
+    second: veikejasjump_9
+  - first:
+      213: 1451231551027116541
+    second: veikejasjump_10
+  - first:
+      213: -1857996643020089755
+    second: veikejasjump_11
+  - first:
+      213: 5621576872180318565
+    second: veikejasjump_12
+  - first:
+      213: -7695702366032333514
+    second: veikejasjump_13
+  - first:
+      213: -8225239446258238556
+    second: veikejasjump_14
+  - first:
+      213: -3638029327609131783
+    second: veikejasjump_15
+  - first:
+      213: 1469158296406036027
+    second: veikejasjump_16
+  - first:
+      213: -3590291159892530505
+    second: veikejasjump_17
+  - first:
+      213: 7949176390963617090
+    second: veikejasjump_18
+  - first:
+      213: 7174047658244196682
+    second: veikejasjump_19
+  - first:
+      213: -647633666868631321
+    second: veikejasjump_20
+  - first:
+      213: 658055550553810762
+    second: veikejasjump_21
+  - first:
+      213: 3816367907990357250
+    second: veikejasjump_22
+  - first:
+      213: 8894225375428009078
+    second: veikejasjump_23
+  - first:
+      213: 7686972895611019956
+    second: veikejasjump_24
+  - first:
+      213: 4661610635470882275
+    second: veikejasjump_25
+  - first:
+      213: 6762925182698266188
+    second: veikejasjump_26
+  - first:
+      213: -2030785126923131614
+    second: veikejasjump_27
+  - first:
+      213: -1034468228553712477
+    second: veikejasjump_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: veikejasjump_0
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1691
+        width: 390
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4f54fb737e03340800000000000000
+      internalID: 4841623826041533600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_1
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1696
+        width: 385
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfd0a0f7d91880b0800000000000000
+      internalID: -5726298510955847739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_2
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1696
+        width: 385
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54490d112254ed750800000000000000
+      internalID: 6331574138759582789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_3
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 1701
+        width: 380
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f675ae0a7c0fe4d0800000000000000
+      internalID: -3103247899863714059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1702
+        width: 375
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9033a2451e94d4380800000000000000
+      internalID: -8985444449405750519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_5
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 1707
+        width: 370
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0d4f05f3e8ce4f0800000000000000
+      internalID: -798106631359115087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_6
+      rect:
+        serializedVersion: 2
+        x: 6827
+        y: 1712
+        width: 368
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f48a389f4eaac20800000000000000
+      internalID: 3218636644016476035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_7
+      rect:
+        serializedVersion: 2
+        x: 7908
+        y: 1717
+        width: 358
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6a5e792d661b740800000000000000
+      internalID: 5166023302248244941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_8
+      rect:
+        serializedVersion: 2
+        x: 8994
+        y: 1723
+        width: 348
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc229b1a701616b60800000000000000
+      internalID: 7737572320205152975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_9
+      rect:
+        serializedVersion: 2
+        x: 10075
+        y: 1733
+        width: 343
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad4784548a3249f0800000000000000
+      internalID: -485761469774344793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 921
+        width: 337
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df97fcd186fc32410800000000000000
+      internalID: 1451231551027116541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_11
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 926
+        width: 332
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5665be2b5e11736e0800000000000000
+      internalID: -1857996643020089755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_12
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 931
+        width: 322
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610cdf716ad30e40800000000000000
+      internalID: 5621576872180318565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 936
+        width: 321
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635728fb87f533590800000000000000
+      internalID: -7695702366032333514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_14
+      rect:
+        serializedVersion: 2
+        x: 4685
+        y: 937
+        width: 317
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab3f358d441add80800000000000000
+      internalID: -8225239446258238556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_15
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 942
+        width: 311
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc87650a9f138dc0800000000000000
+      internalID: -3638029327609131783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_16
+      rect:
+        serializedVersion: 2
+        x: 6848
+        y: 942
+        width: 311
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e8918cfaf736410800000000000000
+      internalID: 1469158296406036027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_17
+      rect:
+        serializedVersion: 2
+        x: 7923
+        y: 942
+        width: 317
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba61665639bc2ec0800000000000000
+      internalID: -3590291159892530505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_18
+      rect:
+        serializedVersion: 2
+        x: 9004
+        y: 937
+        width: 317
+        height: 659
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24dde40afc5215e60800000000000000
+      internalID: 7949176390963617090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_19
+      rect:
+        serializedVersion: 2
+        x: 10080
+        y: 931
+        width: 327
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a494e5fd5565f8360800000000000000
+      internalID: 7174047658244196682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_20
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 113
+        width: 327
+        height: 655
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e826bd7c942307f0800000000000000
+      internalID: -647633666868631321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_21
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 103
+        width: 337
+        height: 654
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47eb356902e12900800000000000000
+      internalID: 658055550553810762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_22
+      rect:
+        serializedVersion: 2
+        x: 2513
+        y: 98
+        width: 348
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20547ff646676f430800000000000000
+      internalID: 3816367907990357250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_23
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 92
+        width: 358
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67cd6a6fad2ae6b70800000000000000
+      internalID: 8894225375428009078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_24
+      rect:
+        serializedVersion: 2
+        x: 4670
+        y: 82
+        width: 363
+        height: 649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b263f80f1d9daa60800000000000000
+      internalID: 7686972895611019956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_25
+      rect:
+        serializedVersion: 2
+        x: 5745
+        y: 77
+        width: 375
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5cc68bc2e51b040800000000000000
+      internalID: 4661610635470882275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_26
+      rect:
+        serializedVersion: 2
+        x: 6826
+        y: 71
+        width: 375
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e16454f9cbadd50800000000000000
+      internalID: 6762925182698266188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_27
+      rect:
+        serializedVersion: 2
+        x: 7902
+        y: 66
+        width: 385
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225a996cfa331d3e0800000000000000
+      internalID: -2030785126923131614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejasjump_28
+      rect:
+        serializedVersion: 2
+        x: 8983
+        y: 61
+        width: 385
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acd0a180a4d4a1f0800000000000000
+      internalID: -1034468228553712477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

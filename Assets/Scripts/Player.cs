@@ -44,7 +44,7 @@ public class Player : MonoBehaviour, IMovable
         rigidbody.gravityScale = 0f;
         //_healthManager = GetComponent<HealthManager>();
         _buttons = GameObject.Find("Engine").GetComponent<Buttons>();
-        var animator = gameObject.GetComponent<Animator>();
+        animator = gameObject.GetComponent<Animator>();
         animator.speed = 2;
         animator.Play("PlayerIdle");
         // TODO: animator = GetComponent<Animator>();
@@ -81,33 +81,38 @@ public class Player : MonoBehaviour, IMovable
 
         if (verticalSpeed == 0)
         {
-            // TODO: animator.SetBool("Walking", false);
+            animator.SetBool("IsMovingUpDown", false);
+        }
+
+        if (horizontalSpeed == 0)
+        {
+            animator.SetBool("IsMovingToSides", false);
         }
 
         if (Math.Abs(horizontalSpeed) > Math.Abs(verticalSpeed) && horizontalSpeed > 0)
         {
             GetComponent<SpriteRenderer>().sprite = SideSprite;
-            // TODO: animator.SetBool("Walking", true);
+            animator.SetBool("IsMovingToSides", true);
             FlipRight();
         }
 
         if (Math.Abs(horizontalSpeed) > Math.Abs(verticalSpeed) && horizontalSpeed < 0)
         {
             GetComponent<SpriteRenderer>().sprite = SideSprite;
-            // TODO: animator.SetBool("Walking", true);
+            animator.SetBool("IsMovingToSides", true);
             FlipLeft();
         }
 
         if (Math.Abs(horizontalSpeed) < Math.Abs(verticalSpeed) && verticalSpeed > 0)
         {
             FlipTop();
-            // TODO: animator.SetBool("Walking", true);
+            animator.SetBool("IsMovingUpDown", true);
         }
 
         if (Math.Abs(horizontalSpeed) < Math.Abs(verticalSpeed) && verticalSpeed < 0)
         {
             FlipBottom();
-            // TODO: animator.SetBool("Walking", true);
+            animator.SetBool("IsMovingUpDown", true);
         }
 
         if (horizontalSpeed == 0 && verticalSpeed == 0)

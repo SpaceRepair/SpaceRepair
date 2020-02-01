@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: 8430fae556d1fed42a5669ef28d9d4f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8700656749777876369
+    second: veikejas_eina_0
+  - first:
+      213: 4662867532113069627
+    second: veikejas_eina_1
+  - first:
+      213: -5665335424825284693
+    second: veikejas_eina_2
+  - first:
+      213: 3279055892122316413
+    second: veikejas_eina_3
+  - first:
+      213: 1320928446919685532
+    second: veikejas_eina_4
+  - first:
+      213: 3923213641259230140
+    second: veikejas_eina_5
+  - first:
+      213: 4524120454146453615
+    second: veikejas_eina_6
+  - first:
+      213: 3961677393782802416
+    second: veikejas_eina_7
+  - first:
+      213: -5598572244233225332
+    second: veikejas_eina_8
+  - first:
+      213: -7203240503988510775
+    second: veikejas_eina_9
+  - first:
+      213: 4385737764335544360
+    second: veikejas_eina_10
+  - first:
+      213: 6824432302135524070
+    second: veikejas_eina_11
+  - first:
+      213: -62936871258472922
+    second: veikejas_eina_12
+  - first:
+      213: 5884839561709423329
+    second: veikejas_eina_13
+  - first:
+      213: -6980489064351808189
+    second: veikejas_eina_14
+  - first:
+      213: 7152787174313529348
+    second: veikejas_eina_15
+  - first:
+      213: -5140430580950513648
+    second: veikejas_eina_16
+  - first:
+      213: 2542082271362441754
+    second: veikejas_eina_17
+  - first:
+      213: 1610613108977860512
+    second: veikejas_eina_18
+  - first:
+      213: 2256682978255289012
+    second: veikejas_eina_19
+  - first:
+      213: 7716569731317229639
+    second: veikejas_eina_20
+  - first:
+      213: 5252987226268731517
+    second: veikejas_eina_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: veikejas_eina_0
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1691
+        width: 390
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a82ecb8ce014780800000000000000
+      internalID: -8700656749777876369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_1
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1696
+        width: 385
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b364d46c055d5b040800000000000000
+      internalID: 4662867532113069627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_2
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 1691
+        width: 385
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba72ad5827fa061b0800000000000000
+      internalID: -5665335424825284693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_3
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 1691
+        width: 374
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e2a90f5fb818d20800000000000000
+      internalID: 3279055892122316413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_4
+      rect:
+        serializedVersion: 2
+        x: 4670
+        y: 1691
+        width: 369
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c953b548c61e45210800000000000000
+      internalID: 1320928446919685532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_5
+      rect:
+        serializedVersion: 2
+        x: 5752
+        y: 1691
+        width: 363
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb32939450e027630800000000000000
+      internalID: 3923213641259230140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_6
+      rect:
+        serializedVersion: 2
+        x: 6837
+        y: 1691
+        width: 353
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f607a7e4597e8ce30800000000000000
+      internalID: 4524120454146453615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_7
+      rect:
+        serializedVersion: 2
+        x: 7923
+        y: 1691
+        width: 343
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f78e1b8994baf630800000000000000
+      internalID: 3961677393782802416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_8
+      rect:
+        serializedVersion: 2
+        x: 9010
+        y: 1696
+        width: 332
+        height: 623
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8bfd15d430ed42b0800000000000000
+      internalID: -5598572244233225332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_9
+      rect:
+        serializedVersion: 2
+        x: 10091
+        y: 1701
+        width: 327
+        height: 618
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf1f001de2f80c90800000000000000
+      internalID: -7203240503988510775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_10
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 889
+        width: 327
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8286c3192454ddc30800000000000000
+      internalID: 4385737764335544360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_11
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 884
+        width: 326
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea3d7a750145be50800000000000000
+      internalID: 6824432302135524070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_12
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 878
+        width: 322
+        height: 628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e3d51cf37602ff0800000000000000
+      internalID: -62936871258472922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_13
+      rect:
+        serializedVersion: 2
+        x: 3610
+        y: 873
+        width: 327
+        height: 633
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea0bd3f6662ba150800000000000000
+      internalID: 5884839561709423329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_14
+      rect:
+        serializedVersion: 2
+        x: 4686
+        y: 868
+        width: 337
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345cfc02e22502f90800000000000000
+      internalID: -6980489064351808189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_15
+      rect:
+        serializedVersion: 2
+        x: 5761
+        y: 868
+        width: 348
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009de6b90ec34360800000000000000
+      internalID: 7152787174313529348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_16
+      rect:
+        serializedVersion: 2
+        x: 6837
+        y: 863
+        width: 353
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018c3ed2f9589a8b0800000000000000
+      internalID: -5140430580950513648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_17
+      rect:
+        serializedVersion: 2
+        x: 7913
+        y: 866
+        width: 364
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1260667b5a474320800000000000000
+      internalID: 2542082271362441754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_18
+      rect:
+        serializedVersion: 2
+        x: 8989
+        y: 868
+        width: 369
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af7637d61c0a5610800000000000000
+      internalID: 1610613108977860512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_19
+      rect:
+        serializedVersion: 2
+        x: 10064
+        y: 868
+        width: 380
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bab3995639515f10800000000000000
+      internalID: 2256682978255289012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_20
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 55
+        width: 380
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748e1b75943c61b60800000000000000
+      internalID: 7716569731317229639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: veikejas_eina_21
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 56
+        width: 385
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78896ffc0c56e840800000000000000
+      internalID: 5252987226268731517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

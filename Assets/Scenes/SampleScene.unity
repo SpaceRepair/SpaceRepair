@@ -1704,6 +1704,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1021320075836068025, guid: c306f801007e9413e8d76fe4211bde8a,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2869f3e5ed579584391fb840b94dd535, type: 2}
     - target: {fileID: 1074609113757922083, guid: c306f801007e9413e8d76fe4211bde8a,
         type: 3}
       propertyPath: DownSprite
