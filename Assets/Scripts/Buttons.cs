@@ -8,25 +8,36 @@ public class Buttons : MonoBehaviour
     public float VerticalAxis = 0f;
     public float HorizontalAxis = 0f;
 
+    public bool touchControlEnabled = false;
+
+    public GameObject joystick;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        joystick.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if (Application.platform == RuntimePlatform.Android)
-        // {
-        //     VerticalAxis = CrossPlatformInputManager.GetAxis("Vertical");
-        //     HorizontalAxis = CrossPlatformInputManager.GetAxis("Horizontal");
-        // }
-        // else
-        // {
+        if (touchControlEnabled)
+        {
+            var joy = GameObject.Find("Joystick").GetComponent<bl_Joystick>();
+            VerticalAxis = joy.Vertical;
+            HorizontalAxis = joy.Horizontal;
+        }
+        else
+        {
             VerticalAxis = Input.GetAxis("Vertical");
             HorizontalAxis = Input.GetAxis("Horizontal");
-        // }
+        }
+    }
+
+    public void ShowMobileInput()
+    {
+        touchControlEnabled = true;
+        joystick.SetActive(true);
     }
 
     public void MoveUp()
