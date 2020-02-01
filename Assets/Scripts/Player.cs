@@ -39,12 +39,32 @@ public class Player : MonoBehaviour, IMovable
         rigidbody.gravityScale = 0f;
         //_healthManager = GetComponent<HealthManager>();
         _buttons = GameObject.Find("Engine").GetComponent<Buttons>();
+        var animator = gameObject.GetComponent<Animator>();
+        animator.speed = 2;
+        animator.Play("PlayerIdle");
         // TODO: animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
         Move();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            UseItems();
+        }
+    }
+
+    public void UseItems()
+    {
+            var holes = GameObject.FindGameObjectsWithTag("Hole1");
+
+            foreach (GameObject hole in holes) 
+            {
+                if (hole.GetComponent<Hole>().isPlayerStanding)
+                {
+                    hole.GetComponent<Hole>().FillMyself();
+                }
+            }
     }
 
     public void Move()

@@ -48,15 +48,15 @@ public class Scrap : MonoBehaviour
             if (xDistance > player.magnetDistance) xDistance = player.magnetDistance;
             var xDirection = player.magnetDistance / xDistance;
             if (Math.Abs(xDistance) < minDistance) xDirection = 0f;
-            Debug.Log($"xDistance: {xDistance}");
-            Debug.Log($"xDirection: {xDirection}");
+            // Debug.Log($"xDistance: {xDistance}");
+            // Debug.Log($"xDirection: {xDirection}");
 
             var yDistance = playerCollider.transform.position.y  - scrapCollider.transform.position.y;
             if (yDistance > player.magnetDistance) yDistance = player.magnetDistance;
             var yDirection = player.magnetDistance / yDistance;
             if (Math.Abs(yDistance) < minDistance) yDirection = 0f;
-            Debug.Log($"yDistance: {yDistance}");
-            Debug.Log($"yDirection: {yDirection}");
+            // Debug.Log($"yDistance: {yDistance}");
+            // Debug.Log($"yDirection: {yDirection}");
             //  set velocity
             scrapRigidbody.velocity =
                 new Vector2(player.magnetStrength * xDirection, player.magnetStrength * yDistance);
