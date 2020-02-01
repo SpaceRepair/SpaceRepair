@@ -39,6 +39,9 @@ public class Player : MonoBehaviour, IMovable
         rigidbody.gravityScale = 0f;
         //_healthManager = GetComponent<HealthManager>();
         _buttons = GameObject.Find("Engine").GetComponent<Buttons>();
+        var animator = gameObject.GetComponent<Animator>();
+        animator.speed = 2;
+        animator.Play("PlayerIdle");
         // TODO: animator = GetComponent<Animator>();
     }
 
