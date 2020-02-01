@@ -34,6 +34,10 @@ public class Buttons : MonoBehaviour
             VerticalAxis = Input.GetAxis("Vertical");
             HorizontalAxis = Input.GetAxis("Horizontal");
         }
+        if (Input.GetKeyDown("escape"))
+        {
+            GameRestart();
+        }
     }
 
     public void ShowMobileInput()
@@ -81,5 +85,11 @@ public class Buttons : MonoBehaviour
     public void NoMoveLeft()
     {
         HorizontalAxis = 0;
+    }
+
+    public void GameRestart()
+    {
+        Time.timeScale = 1F;
+        Application.LoadLevel(Application.loadedLevel);
     }
 }

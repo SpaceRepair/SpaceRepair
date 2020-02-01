@@ -9,7 +9,7 @@ public class SpawnHoles : MonoBehaviour
     private List<GameObject> PlacedHoles;
 
     [SerializeField]
-    private float period = 6.0f;
+    private float period = 4.0f;
 
     [SerializeField]
     private Transform holePrefab;
@@ -61,7 +61,7 @@ public class SpawnHoles : MonoBehaviour
 
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
-            damageController.DealDamage(0.1f);
+            damageController.DealDamage(0.2f);
 
         }
     }

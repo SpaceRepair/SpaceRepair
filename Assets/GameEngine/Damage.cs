@@ -7,12 +7,14 @@ public class Damage : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField] private Image damageBar;
-    [SerializeField] private int maxDamage = 1;
+    [SerializeField] private float maxDamage;
+
+    public GameObject GameOverScreen;
     
     // Start is called before the first frame update
     void Start()
     {
-        maxDamage = 1; // Kiek daugiausiai zalos gali spaceship gaut.
+        maxDamage = 1f; // Kiek daugiausiai zalos gali spaceship gaut.
         damage = 0; // Pradzioj žaidimo laivas sveikas.
         UpdateDamage();
     }
@@ -41,6 +43,9 @@ public class Damage : MonoBehaviour
     {
         if (damage >= maxDamage)
         {
+            GameOverScreen.SetActive(true);
+            // TODO: Stop music gameObject.GetComponent<AudioSource>().Stop();
+            Time.timeScale = 0.0F;
             // TODO: end the game
         }
     }
