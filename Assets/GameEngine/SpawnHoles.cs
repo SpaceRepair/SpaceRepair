@@ -9,16 +9,19 @@ public class SpawnHoles : MonoBehaviour
     private List<GameObject> PlacedHoles;
 
     [SerializeField]
-    private float period = 3.0f;
+    private float period = 6.0f;
 
     [SerializeField]
     private Transform holePrefab;
+
+    private Damage damageController;
 
     // Start is called before the first frame update
     void Start()
     {
         holes = GameObject.FindGameObjectsWithTag("Hole");
         PlacedHoles = new List<GameObject>();
+        damageController = GameObject.Find("DamageBar").GetComponent<Damage>();
 
         /*if (holes.Length == 0)
         {
@@ -37,6 +40,11 @@ public class SpawnHoles : MonoBehaviour
         }
     }
 
+    public void RemoveAHole()
+    {
+        // Removes a hole
+    }
+
     private void SpawnAHole(GameObject hole)
     {
         //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
@@ -45,6 +53,8 @@ public class SpawnHoles : MonoBehaviour
             var newHole = Instantiate(holePrefab);
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
+            damageController.MakeDamage(0.1f);
+
         }
     }
 

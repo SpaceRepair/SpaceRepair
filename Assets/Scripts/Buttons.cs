@@ -11,11 +11,13 @@ public class Buttons : MonoBehaviour
     public bool touchControlEnabled = false;
 
     public GameObject joystick;
+    public GameObject buttonForAndroid;
 
     // Start is called before the first frame update
     void Start()
     {
         joystick.SetActive(false);
+        buttonForAndroid.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class Buttons : MonoBehaviour
     {
         touchControlEnabled = true;
         joystick.SetActive(true);
+        buttonForAndroid.SetActive(true);
     }
 
     public void MoveUp()

@@ -7,7 +7,6 @@ public class Damage : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField] private Image damageBar;
-
     [SerializeField] private int maxDamage = 1;
     
     // Start is called before the first frame update
