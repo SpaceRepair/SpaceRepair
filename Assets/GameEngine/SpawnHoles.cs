@@ -14,7 +14,6 @@ public class SpawnHoles : MonoBehaviour
     [SerializeField]
     private Transform holePrefab;
 
-    [SerializeField] 
     private Damage damageController;
 
     // Start is called before the first frame update
@@ -22,6 +21,7 @@ public class SpawnHoles : MonoBehaviour
     {
         holes = GameObject.FindGameObjectsWithTag("Hole");
         PlacedHoles = new List<GameObject>();
+        damageController = GameObject.Find("DamageBar").GetComponent<Damage>();
 
         /*if (holes.Length == 0)
         {
@@ -53,6 +53,8 @@ public class SpawnHoles : MonoBehaviour
             var newHole = Instantiate(holePrefab);
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
+            damageController.MakeDamage(0.1f);
+
         }
     }
 

@@ -15,7 +15,6 @@ public class Damage : MonoBehaviour
         maxDamage = 1; // Kiek daugiausiai zalos gali spaceship gaut.
         damage = 0; // Pradzioj žaidimo laivas sveikas.
         UpdateDamage();
-        MakeDamage(0.1f);
     }
 
     // Makes damage to the ship
