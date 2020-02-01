@@ -61,17 +61,21 @@ public class Player : MonoBehaviour, IMovable
 
     public void UseItems()
     {
-            var holes = GameObject.FindGameObjectsWithTag("Hole1");
+        var holes = GameObject.FindGameObjectsWithTag("Hole1");
 
-            foreach (GameObject hole in holes) 
+        foreach (GameObject hole in holes) 
+        {
+            if (hole.GetComponent<Hole>().isPlayerStanding)
             {
-                if (hole.GetComponent<Hole>().isPlayerStanding)
-                {
-                    ScrapCount--;
-                    Debug.Log(ScrapCount);
-                    hole.GetComponent<Hole>().FillMyself(scraps.First());
-                }
+                ScrapCount--;
+                Debug.Log(ScrapCount);
+                var scrap = scraps.First();
+                scrap.GetComponent<Scrap>().StopRotating();
+                scrap.transform.position = hole.transform.position;
+                hole.GetComponent<Hole>().FillMyself(scrap);
+                scraps.Remove(scrap);
             }
+        }
     }
 
     public void Move()
@@ -168,7 +172,9 @@ public class Player : MonoBehaviour, IMovable
         {
             scraps.Add(other.gameObject);
             other.transform.parent = transform;
-            other.transform.GetComponent<Scrap>()?.StopFollowing();
+            var scrap = other.transform.GetComponent<Scrap>();
+            scrap?.StopFollowing();
+            scrap?.StartRotatingAroundPlayer();
             ScrapCount++;
             Debug.Log(ScrapCount);
         }
