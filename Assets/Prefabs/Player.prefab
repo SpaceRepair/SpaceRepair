@@ -104,8 +104,9 @@ MonoBehaviour:
   SideSprite: {fileID: 0}
   UpSprite: {fileID: 0}
   _speed: 0
-  magnetDistance: 3
+  magnetDistance: 2
   magnetStrength: 2
+  scraps: []
 --- !u!50 &1138172040797010407
 Rigidbody2D:
   serializedVersion: 4
