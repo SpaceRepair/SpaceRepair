@@ -85,15 +85,10 @@ public class Player : MonoBehaviour, IMovable
         var verticalSpeed = _buttons.VerticalAxis;
         var horizontalSpeed = _buttons.HorizontalAxis;
 
-        if (verticalSpeed == 0)
-        {
-            animator.SetBool("IsMovingUpDown", false);
-        }
-
-        if (horizontalSpeed == 0)
-        {
-            animator.SetBool("IsMovingToSides", false);
-        }
+        animator.SetBool("IsMovingUp", false);
+        animator.SetBool("IsMovingDown", false);
+        animator.SetBool("IsMovingToSides", false);
+    
 
         if (Math.Abs(horizontalSpeed) > Math.Abs(verticalSpeed) && horizontalSpeed > 0)
         {
@@ -112,13 +107,13 @@ public class Player : MonoBehaviour, IMovable
         if (Math.Abs(horizontalSpeed) < Math.Abs(verticalSpeed) && verticalSpeed > 0)
         {
             FlipTop();
-            animator.SetBool("IsMovingUpDown", true);
+            animator.SetBool("IsMovingUp", true);
         }
 
         if (Math.Abs(horizontalSpeed) < Math.Abs(verticalSpeed) && verticalSpeed < 0)
         {
             FlipBottom();
-            animator.SetBool("IsMovingUpDown", true);
+            animator.SetBool("IsMovingDown", true);
         }
 
         if (horizontalSpeed == 0 && verticalSpeed == 0)
