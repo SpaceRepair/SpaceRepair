@@ -26,8 +26,8 @@ public class Buttons : MonoBehaviour
         if (touchControlEnabled)
         {
             var joy = GameObject.Find("Joystick").GetComponent<bl_Joystick>();
-            VerticalAxis = 0.5f * joy.Vertical;
-            HorizontalAxis = 0.5f * joy.Horizontal;
+            VerticalAxis = 0.2f * joy.Vertical;
+            HorizontalAxis = 0.2f * joy.Horizontal;
         }
         else
         {
