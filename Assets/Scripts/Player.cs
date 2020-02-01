@@ -36,6 +36,9 @@ public class Player : MonoBehaviour, IMovable
     public bool canShoot = true;
     public float activeTime = 0.025f;
 
+    public float magnetDistance = 3f;
+    public float magnetStrength = 2f;
+
     public void Shoot()
     {
         // if (SkillPrefab != null && canShoot)
