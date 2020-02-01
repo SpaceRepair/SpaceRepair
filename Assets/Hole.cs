@@ -35,6 +35,7 @@ public class Hole : MonoBehaviour
     {
         //scrap.transform.parent = transform;
         //scrap.transform.position = new Vector2(0f, 0f);
+        scrap.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
         var renderer = GetComponent<SpriteRenderer>();
         // NOT WORKING
         // scrap.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
