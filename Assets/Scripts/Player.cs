@@ -14,8 +14,6 @@ public enum Direction
 public class Player : MonoBehaviour, IMovable
 {
     public Vector2 lastVelocity;
-    public GameObject PowerUp;
-    public GameObject SkillPrefab;
     public Sprite DownSprite;
     public Sprite SideSprite;
 
@@ -27,48 +25,13 @@ public class Player : MonoBehaviour, IMovable
     private float _speed;
     public float Speed { get { return _speed; } set { _speed = value; } }
 
+    public int ScrapCount { get; private set; } = 0;
 
     private new Rigidbody2D rigidbody;
     private Animator animator;
 
-    public GameObject Mama = null;
-
-    public bool canShoot = true;
-    public float activeTime = 0.025f;
-
     public float magnetDistance = 3f;
     public float magnetStrength = 2f;
-
-    public void Shoot()
-    {
-        // if (SkillPrefab != null && canShoot)
-        // {
-
-        //     GameObject actualProjectile = Instantiate(SkillPrefab, transform.position, transform.rotation);
-        //     Skill skillScript = actualProjectile.GetComponent<Skill>();
-        //     skillScript.direction = lastVelocity;
-
-        //     RemoveActive();
-        //     canShoot = false;
-        //     StartCoroutine(ActivateAgain());
-        // }
-    }
-
-    public void RemoveActiveSkill()
-    {
-        SkillPrefab = null;
-        var powerImage = GameObject.Find("Power1Button").GetComponent<Image>();
-        var tempColor = powerImage.color;
-        tempColor.a = 0;
-        powerImage.color = tempColor;
-    }
-
-    public IEnumerator ActivateAgain()
-    {
-        yield return new WaitForSeconds(activeTime);
-        canShoot = true;
-    }
-
 
     private void Start()
     {
@@ -79,19 +42,9 @@ public class Player : MonoBehaviour, IMovable
         // TODO: animator = GetComponent<Animator>();
     }
 
-
     private void Update()
     {
         Move();
-        CheckForShooting();
-    }
-
-    private void CheckForShooting()
-    {
-        if (Input.GetKeyDown("space") || Input.GetKeyDown("x"))
-        {
-            Shoot();
-        }
     }
 
     public void Move()
@@ -179,41 +132,13 @@ public class Player : MonoBehaviour, IMovable
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Mama")
+        if (other.gameObject.tag == "Scrap" && other.transform.parent != transform)
         {
-            // TODO: Animation/sound
-            Destroy(other.gameObject);
-            //GameObject.Find("Engine").GetComponent<Darkness>().StartDarkening();
-            //DecreaseHP();
+            other.transform.parent = transform;
+            other.transform.GetComponent<Scrap>()?.StopFollowing();
+            ScrapCount++;
+            Debug.Log(ScrapCount);
         }
-    }
-
-    public void DecreaseHP()
-    {
-        // TODO: _healthManager.DealDamage(HealthObjectType.Health, 1);
-    }
-
-    public void IncreaseHP(int count)
-    {
-        // TODO: _healthManager.AddHealth(HealthObjectType.Health, 1);
-    }
-
-
-    public void GiveSkill(GameObject newSkill)
-    {
-        // gameObject.GetComponent<AudioSource>().Play();
-        // SkillPrefab = newSkill;
-        // var powerImage = GameObject.Find("Power1Button").GetComponent<Image>();
-        // powerImage.sprite = newSkill.GetComponent<Skill>().UISprite;
-        // var tempColor = powerImage.color;
-        // tempColor.a = 1;
-        // powerImage.color = tempColor;
-
-    }
-
-    public bool HasSkill()
-    {
-        return SkillPrefab != null;
     }
 }
 
