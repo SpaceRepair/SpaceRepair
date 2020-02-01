@@ -13,6 +13,7 @@ public class SpawnHoles : MonoBehaviour
 
     [SerializeField]
     private Transform holePrefab;
+
     [SerializeField]
     private Transform holePrefab2;
 
@@ -42,18 +43,14 @@ public class SpawnHoles : MonoBehaviour
         }
     }
 
-    public void RemoveAHole()
-    {
-        // Removes a hole
-    }
-
     private void SpawnAHole(GameObject hole)
     {
         //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
         if (! HoleExists(hole))
         {
             Transform newHole;
-            if (Random.Range(0, 2) == 0)
+            int number = Random.Range(0, 2);
+            if (number == 0)
             {
                 newHole = Instantiate(holePrefab);
             }
