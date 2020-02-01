@@ -4,10 +4,13 @@ using UnityEngine;
 public class Scrap : MonoBehaviour
 {
     private bool shouldFollowPlayer = true;
+    private bool shouldRotate;
+    private Player player;
     public float minDistance = 0.7f;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -17,9 +20,10 @@ public class Scrap : MonoBehaviour
         {
             HoverToPlayer();
         }
-        else
+
+        if (shouldRotate)
         {
-            transform.RotateAround(transform.parent.position, Vector3.forward, 30 * Time.deltaTime);
+            transform.RotateAround(player.transform.position, Vector3.forward, 30 * Time.deltaTime);
         }
     }
 
@@ -31,10 +35,19 @@ public class Scrap : MonoBehaviour
         //GetComponent<Rigidbody2D>().isKinematic = true;
     }
 
+    public void StartRotatingAroundPlayer()
+    {
+        shouldRotate = true;
+    }
+
+    public void StopRotating()
+    {
+        shouldRotate = false;
+    }
+
     private void HoverToPlayer()
     {
         // Calculate player distance
-        var player = GameObject.Find("Player").GetComponent<Player>();
         var playerCollider = GameObject.Find("Player").GetComponent<Collider2D>();
         var scrapCollider = gameObject.GetComponent<Collider2D>();
         float distance = Vector2.Distance(playerCollider.transform.position, scrapCollider.transform.position);
