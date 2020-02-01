@@ -72,7 +72,9 @@ public class Player : MonoBehaviour, IMovable
                 var scrap = scraps.First();
                 scrap.GetComponent<Scrap>().StopRotating();
                 scrap.transform.position = hole.transform.position;
+                scrap.transform.parent = null;
                 hole.GetComponent<Hole>().FillMyself(scrap);
+                hole.GetComponent<Hole>().DealDamage();
                 scraps.Remove(scrap);
             }
         }
