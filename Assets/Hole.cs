@@ -32,4 +32,10 @@ public class Hole : MonoBehaviour
             isPlayerStanding = false;
         }
     }
+
+    public void FillMyself()
+    {
+        var renderer = GetComponent<SpriteRenderer>();
+        renderer.material.SetColor("_Color", new Color(0f, 0f, 0f, 0.5f));
+    }
 }

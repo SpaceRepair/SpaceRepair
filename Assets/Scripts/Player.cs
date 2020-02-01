@@ -48,6 +48,23 @@ public class Player : MonoBehaviour, IMovable
     private void Update()
     {
         Move();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            UseItems();
+        }
+    }
+
+    public void UseItems()
+    {
+            var holes = GameObject.FindGameObjectsWithTag("Hole1");
+
+            foreach (GameObject hole in holes) 
+            {
+                if (hole.GetComponent<Hole>().isPlayerStanding)
+                {
+                    hole.GetComponent<Hole>().FillMyself();
+                }
+            }
     }
 
     public void Move()
