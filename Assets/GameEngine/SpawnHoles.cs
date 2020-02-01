@@ -13,6 +13,8 @@ public class SpawnHoles : MonoBehaviour
 
     [SerializeField]
     private Transform holePrefab;
+    [SerializeField]
+    private Transform holePrefab2;
 
     private Damage damageController;
 
@@ -50,7 +52,16 @@ public class SpawnHoles : MonoBehaviour
         //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
         if (! HoleExists(hole))
         {
-            var newHole = Instantiate(holePrefab);
+            Transform newHole;
+            if (Random.Range(0, 2) == 0)
+            {
+                newHole = Instantiate(holePrefab);
+            }
+            else
+            {
+                newHole = Instantiate(holePrefab2);
+            }
+
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
             damageController.MakeDamage(0.1f);

@@ -1892,6 +1892,8 @@ MonoBehaviour:
   period: 3
   holePrefab: {fileID: 1629376349561238185, guid: 1edd557222b0e0f4db08fd4e954647ac,
     type: 3}
+  holePrefab2: {fileID: 8708620174358958539, guid: b44a79987e9e64a1297d2c653be6c93d,
+    type: 3}
 --- !u!1 &686732402
 GameObject:
   m_ObjectHideFlags: 0
