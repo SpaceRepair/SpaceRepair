@@ -19,7 +19,6 @@ public class Damage : MonoBehaviour
         UpdateDamage();
     }
 
-    // Makes damage to the ship
     public void DealDamage(float amount)
     {
         damage += amount;

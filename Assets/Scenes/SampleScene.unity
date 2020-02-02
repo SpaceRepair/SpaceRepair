@@ -2205,7 +2205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 663188957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 943afb2aab5bf4c32964037935103383, type: 3}
+  m_Script: {fileID: 11500000, guid: 178307471b32244de8b761a5f1101bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnInterval: 3
@@ -5368,6 +5368,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Scrap
       objectReference: {fileID: 0}
+    - target: {fileID: 3582676336880873212, guid: 8565e33a5be650f42841e64fe29c6fbf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7743121131895891283, guid: 8565e33a5be650f42841e64fe29c6fbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5436,6 +5441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1542034709151894616, guid: 1799fe773cef8664a8169287bcacc886,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1542034709151894619, guid: 1799fe773cef8664a8169287bcacc886,
         type: 3}
@@ -5581,6 +5591,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap3
       objectReference: {fileID: 0}
+    - target: {fileID: 3104352951468542690, guid: 2854531cc471ef34bb3e932873f32c7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2854531cc471ef34bb3e932873f32c7e, type: 3}
 --- !u!4 &2428476736504389218 stripped
@@ -5661,6 +5676,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap2
       objectReference: {fileID: 0}
+    - target: {fileID: 675931712620034410, guid: 61a7726a94b9a4a40a3c785507ebdfe9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a7726a94b9a4a40a3c785507ebdfe9, type: 3}
 --- !u!1001 &2820177720950978207
@@ -5730,6 +5750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap1
       objectReference: {fileID: 0}
+    - target: {fileID: 2820177719653980674, guid: 84d511cdce44588419966f6d387be319,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2820177719653980735, guid: 84d511cdce44588419966f6d387be319,
         type: 3}
       propertyPath: m_SortingOrder
@@ -5754,6 +5779,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8381739720439283505, guid: cdbb581ea05ca384ab7c96a863ff1453,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8381739720439283506, guid: cdbb581ea05ca384ab7c96a863ff1453,
         type: 3}
@@ -5830,6 +5860,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap7
       objectReference: {fileID: 0}
+    - target: {fileID: 2216472012647182045, guid: 8f7b47b021b54b7418f237cb28e07655,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2216472012647182046, guid: 8f7b47b021b54b7418f237cb28e07655,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5904,6 +5939,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scrap5
       objectReference: {fileID: 0}
+    - target: {fileID: 5928347615578865208, guid: c6d2115cf55cafd4fb63ac3252a52695,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5928347615578865211, guid: c6d2115cf55cafd4fb63ac3252a52695,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5977,6 +6017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scrap4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073668596828664120, guid: 8b84812c71d43b549a225b26c9eb3d5a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2073668596828664123, guid: 8b84812c71d43b549a225b26c9eb3d5a,
         type: 3}
