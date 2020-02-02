@@ -2208,9 +2208,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943afb2aab5bf4c32964037935103383, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnInterval: 3
-  scrapPrefabs: []
-  positions: []
+  period: 3
+  Scrap1: {fileID: 0}
+  Scrap2: {fileID: 0}
+  Scrap3: {fileID: 0}
+  Scrap4: {fileID: 0}
+  Scrap5: {fileID: 0}
+  Scrap6: {fileID: 0}
+  Scrap7: {fileID: 0}
+  Scrap8: {fileID: 0}
 --- !u!1 &686732402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4381,7 +4387,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d6e9ea4da10974aaba2efda5ec26be1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a78c6d4836e7e453cb17461c6e176f8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5516,6 +5522,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3104352951468542687, guid: 2854531cc471ef34bb3e932873f32c7e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9afddd2f60c414acfbb5ab1183e39289,
+        type: 3}
     - target: {fileID: 3104352951468542689, guid: 2854531cc471ef34bb3e932873f32c7e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5885,6 +5897,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2216472012647182048, guid: 8f7b47b021b54b7418f237cb28e07655,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e10f7de1d21ee42a9adc1012c191fafe,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f7b47b021b54b7418f237cb28e07655, type: 3}
 --- !u!1001 &4314160002542993389
@@ -5899,6 +5917,12 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5928347615578865157, guid: c6d2115cf55cafd4fb63ac3252a52695,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a918220f0623432caee272e88764f0b,
+        type: 3}
     - target: {fileID: 5928347615578865208, guid: c6d2115cf55cafd4fb63ac3252a52695,
         type: 3}
       propertyPath: m_Name
