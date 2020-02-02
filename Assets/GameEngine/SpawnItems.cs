@@ -54,6 +54,7 @@ public class SpawnItems : MonoBehaviour
 
     private void SpawnAnItem(GameObject item)
     {
-
+        Transform newItem = Instantiate(scraps[ Random.Range(0, scraps.Count + 1) ]);
+        newItem.transform.position = new Vector3(item.transform.position.x, item.transform.position.y, 0);
     }
 }
