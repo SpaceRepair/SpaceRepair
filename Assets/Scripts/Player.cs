@@ -77,7 +77,6 @@ public class Player : MonoBehaviour, IMovable
 
     public void RecalculateIndicators()
     {
-        //var holes = GameObject.FindGameObjectsWithTag("FakeHole");
         var holes = GameObject.FindGameObjectsWithTag("Hole1");
 
         foreach (GameObject hole in holes) 

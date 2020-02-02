@@ -25,11 +25,6 @@ public class SpawnHoles : MonoBehaviour
         holes = GameObject.FindGameObjectsWithTag("Hole");
         PlacedHoles = new List<GameObject>();
         damageController = GameObject.Find("DamageBar").GetComponent<Damage>();
-
-        /*if (holes.Length == 0)
-        {
-            Debug.Log("No objects found!");
-        }*/
     }
 
     // Update is called once per frame
