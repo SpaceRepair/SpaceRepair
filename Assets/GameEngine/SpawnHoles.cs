@@ -61,6 +61,8 @@ public class SpawnHoles : MonoBehaviour
 
             newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
             PlacedHoles.Add(hole);
+            var player = GameObject.Find("Player").GetComponent<Player>();
+            player.AddNewHole(newHole.gameObject);
             damageController.DealDamage(0.2f);
 
         }

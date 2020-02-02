@@ -38,7 +38,7 @@ public class Player : MonoBehaviour, IMovable
 
     public List<GameObject> holes = new List<GameObject>();
     public GameObject IndicatorPrefab;
-    public List<GameObject> indicators = new List<GameObject>();
+    public Dictionary<int, GameObject> indicators = new Dictionary<int, GameObject>();
 
     public List<GameObject> scraps = new List<GameObject>();
 
@@ -52,6 +52,8 @@ public class Player : MonoBehaviour, IMovable
         animator.speed = 2;
         animator.Play("PlayerIdle");
         // TODO: animator = GetComponent<Animator>();
+        InitiateIndicatorsForExistingHoles();
+        //AddNewHole(GameObject.FindWithTag("FakeHole"));
     }
 
     private void Update()
@@ -63,49 +65,102 @@ public class Player : MonoBehaviour, IMovable
         }
         RecalculateIndicators();
     }
+    public void InitiateIndicatorsForExistingHoles()
+    {
+        var holes = GameObject.FindGameObjectsWithTag("Hole1");
+
+        foreach (GameObject hole in holes) 
+        {
+            AddNewHole(hole);
+        }
+    }
 
     public void RecalculateIndicators()
     {
         //var holes = GameObject.FindGameObjectsWithTag("FakeHole");
         var holes = GameObject.FindGameObjectsWithTag("Hole1");
-        foreach (GameObject indicator in indicators) 
-        {
-            Destroy(indicator);
-        }
 
         foreach (GameObject hole in holes) 
         {
+            var indicator = indicators[hole.GetInstanceID()];
             if (!hole.GetComponent<Hole>().isFilled && !hole.GetComponent<Hole>().isVisible)
             {
-                CreateIndicator(hole.transform.position, gameObject.transform.position);
+                PositionIndicator(hole.transform.position, gameObject.transform.position, indicator);
+            }
+            else
+            {
+                indicator.SetActive(false);
             }
         }
     }
 
-    private void CreateIndicator(Vector3 holePos, Vector3 playerPos)
+    private void PositionIndicator(Vector3 holePos, Vector3 playerPos, GameObject indicator)
     {
-        // TOP
-        Debug.Log($"holePos.y: {holePos.y}");
-        Debug.Log($"playerPos.y: {playerPos.y}");
-        Debug.Log($"holePos.y: {holePos.y}");
+        indicator.SetActive(true);
+        // Debug.Log($"holePos.y: {holePos.y}");
+        // Debug.Log($"playerPos.y: {playerPos.y}");
+        // Debug.Log($"holePos.x: {holePos.x}");
+        // Debug.Log($"playerPos.x: {playerPos.x}");
         var cameraHeight = Camera.main.orthographicSize;
-        Debug.Log($"cameraHeight: {cameraHeight}");
-        if (holePos.y - playerPos.y > cameraHeight)
+        var cameraWidth = cameraHeight * Camera.main.aspect;
+        // Debug.Log($"cameraHeight: {cameraHeight}");
+
+        var horizontalPos = playerPos.y;
+        if (holePos.y > playerPos.y)
         {
-            var newIndicator = Instantiate(IndicatorPrefab);
-            newIndicator.transform.position = new Vector3(playerPos.x, playerPos.y + cameraHeight, 0);
-            indicators.Add(newIndicator);
+            horizontalPos = playerPos.y + ((holePos.y - playerPos.y) / 2);
+            if (horizontalPos > playerPos.y + cameraHeight / 2)
+            {
+                horizontalPos = playerPos.y + cameraHeight / 2;
+            }
+        }
+        if (holePos.y < playerPos.y)
+        {
+            horizontalPos = playerPos.y - ((playerPos.y - holePos.y) / 2);
+            if (horizontalPos < playerPos.y - cameraHeight / 2)
+            {
+                horizontalPos = playerPos.y - cameraHeight / 2;
+            }
+        }
+        // LEFT
+        if (playerPos.x - holePos.x > cameraWidth)
+        {
+            indicator.transform.position = new Vector3(playerPos.x - cameraWidth, horizontalPos, 0);
+        }
+        // RIGHT
+        if (holePos.x - playerPos.x > cameraWidth)
+        {
+            indicator.transform.position = new Vector3(playerPos.x + cameraWidth, horizontalPos, 0);
         }
 
-        // LEFT
+        var verticalPos = playerPos.x;
+        if (holePos.x > playerPos.x)
+        {
+            verticalPos = playerPos.x + ((holePos.x - playerPos.x) / 2);
+            if (verticalPos > playerPos.x + cameraWidth / 2)
+            {
+                verticalPos = playerPos.x + cameraWidth / 2;
+            }
+        }
+        if (holePos.x < playerPos.x)
+        {
+            verticalPos = playerPos.x - ((playerPos.x - holePos.x) / 2);
+            if (verticalPos < playerPos.x - cameraWidth / 2)
+            {
+                verticalPos = playerPos.x - cameraWidth / 2;
+            }
+        }
+
+        // TOP
+        if (holePos.y - playerPos.y > cameraHeight)
+        {
+            indicator.transform.position = new Vector3(verticalPos, playerPos.y + cameraHeight, 0);
+        }
         // DOWN
         if (playerPos.y - holePos.y > cameraHeight)
         {
-            var newIndicator = Instantiate(IndicatorPrefab);
-            newIndicator.transform.position = new Vector3(playerPos.x, playerPos.y - cameraHeight, 0);
-            indicators.Add(newIndicator);
+            indicator.transform.position = new Vector3(verticalPos, playerPos.y - cameraHeight, 0);
         }
-        // RIGHT
     }
 
     public void UseItems()
@@ -228,6 +283,8 @@ public class Player : MonoBehaviour, IMovable
 
     public void AddNewHole(GameObject newHole)
     {
+        var newIndicator = Instantiate(IndicatorPrefab); 
+        indicators.Add(newHole.GetInstanceID(), newIndicator);
         RecalculateIndicators();
     }
 }
