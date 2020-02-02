@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 1178849820161940821}
   - component: {fileID: 927467664979894846}
   m_Layer: 0
-  m_Name: Ratas
-  m_TagString: Untagged
+  m_Name: Scrap9
+  m_TagString: Scrap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

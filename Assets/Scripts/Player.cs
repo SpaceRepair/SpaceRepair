@@ -275,6 +275,7 @@ public class Player : MonoBehaviour, IMovable
             var scrap = other.transform.GetComponent<Scrap>();
             scrap?.StopFollowing();
             scrap?.StartRotatingAroundPlayer();
+            ItemSpawnManager.PickUpScrap(scrap);
             ScrapCount++;
             Debug.Log(ScrapCount);
         }
