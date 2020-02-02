@@ -42,6 +42,8 @@ public class Player : MonoBehaviour, IMovable
 
     public List<GameObject> scraps = new List<GameObject>();
 
+    public float indicatorBorder = 0.2f;
+
     private void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -124,12 +126,12 @@ public class Player : MonoBehaviour, IMovable
         // LEFT
         if (playerPos.x - holePos.x > cameraWidth)
         {
-            indicator.transform.position = new Vector3(playerPos.x - cameraWidth, horizontalPos, 0);
+            indicator.transform.position = new Vector3(playerPos.x - cameraWidth + indicatorBorder, horizontalPos, 0);
         }
         // RIGHT
         if (holePos.x - playerPos.x > cameraWidth)
         {
-            indicator.transform.position = new Vector3(playerPos.x + cameraWidth, horizontalPos, 0);
+            indicator.transform.position = new Vector3(playerPos.x + cameraWidth - indicatorBorder, horizontalPos, 0);
         }
 
         var verticalPos = playerPos.x;
@@ -153,12 +155,12 @@ public class Player : MonoBehaviour, IMovable
         // TOP
         if (holePos.y - playerPos.y > cameraHeight)
         {
-            indicator.transform.position = new Vector3(verticalPos, playerPos.y + cameraHeight, 0);
+            indicator.transform.position = new Vector3(verticalPos, playerPos.y + cameraHeight - indicatorBorder, 0);
         }
         // DOWN
         if (playerPos.y - holePos.y > cameraHeight)
         {
-            indicator.transform.position = new Vector3(verticalPos, playerPos.y - cameraHeight, 0);
+            indicator.transform.position = new Vector3(verticalPos, playerPos.y - cameraHeight + indicatorBorder, 0);
         }
     }
 
