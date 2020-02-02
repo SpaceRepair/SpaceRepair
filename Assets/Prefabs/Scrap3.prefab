@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 0.8
+  nonGlowing: {fileID: 21300000, guid: d161f72ed9f418c4fbaefe1d4ce2fea0, type: 3}
 --- !u!50 &3104352951468542685
 Rigidbody2D:
   serializedVersion: 4

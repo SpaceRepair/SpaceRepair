@@ -7,6 +7,7 @@ public class Scrap : MonoBehaviour
     private bool shouldRotate;
     private Player player;
     public float minDistance = 0.7f;
+    public Sprite nonGlowing; 
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,12 @@ public class Scrap : MonoBehaviour
         {
             transform.RotateAround(player.transform.position, Vector3.forward, 30 * Time.deltaTime);
         }
+    }
+
+    public void StopGlow()
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = nonGlowing;
+        //gameObject.GetComponent<Renderer>().material.mainTexture = nonGlowing;
     }
 
     public void StopFollowing()

@@ -180,6 +180,7 @@ public class Player : MonoBehaviour, IMovable
                 scrap.transform.parent = null;
                 hole.GetComponent<Hole>().FillMyself(scrap);
                 hole.GetComponent<Hole>().DealDamage();
+                scrap.GetComponent<Scrap>().StopGlow();
                 scraps.Remove(scrap);
             }
         }
