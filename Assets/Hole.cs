@@ -15,6 +15,9 @@ public class Hole : MonoBehaviour
     public Sprite FixedConsoleImage;
     public GameObject SecretWall;
 
+    public bool isFilled = false;
+    public bool isVisible = false;
+
     void Start()
     {
         CurrentHp = MaxHp;
@@ -34,6 +37,15 @@ public class Hole : MonoBehaviour
         {
             isPlayerStanding = false;
         }
+    }
+    void OnBecameVisible()
+    {
+        isVisible = true;
+    }
+    
+    void OnBecameInvisible()
+    {
+        isVisible = false;
     }
 
     public void FillMyself(GameObject scrap)
@@ -59,9 +71,11 @@ public class Hole : MonoBehaviour
         {
             if (CurrentHp == 0)
             {
+                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
                 GetComponent<SpriteRenderer>().sprite = FixedConsoleImage;
+                isFilled = true;
+                SecretWall.transform.localScale = new Vector3(1,30,1);
             }
-            SecretWall.transform.localScale = new Vector3(1,30,1);
         }
         else
         {
@@ -70,10 +84,12 @@ public class Hole : MonoBehaviour
             {
                 GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
                 Destroy(gameObject);
-                return;
+                isFilled = true;
             }
-
-            transform.localScale = new Vector2(scale, scale);
+            else
+            {
+                transform.localScale = new Vector2(scale, scale);
+            }
         }
     }
 }

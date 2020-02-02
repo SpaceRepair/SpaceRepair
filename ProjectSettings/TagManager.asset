@@ -9,6 +9,7 @@ TagManager:
   - BackgroundCamera
   - Hole1
   - Item
+  - FakeHole
   layers:
   - Default
   - TransparentFX

@@ -36,6 +36,10 @@ public class Player : MonoBehaviour, IMovable
     public float magnetDistance = 3f;
     public float magnetStrength = 2f;
 
+    public List<GameObject> holes = new List<GameObject>();
+    public GameObject IndicatorPrefab;
+    public List<GameObject> indicators = new List<GameObject>();
+
     public List<GameObject> scraps = new List<GameObject>();
 
     private void Start()
@@ -57,6 +61,51 @@ public class Player : MonoBehaviour, IMovable
         {
             UseItems();
         }
+        RecalculateIndicators();
+    }
+
+    public void RecalculateIndicators()
+    {
+        //var holes = GameObject.FindGameObjectsWithTag("FakeHole");
+        var holes = GameObject.FindGameObjectsWithTag("Hole1");
+        foreach (GameObject indicator in indicators) 
+        {
+            Destroy(indicator);
+        }
+
+        foreach (GameObject hole in holes) 
+        {
+            if (!hole.GetComponent<Hole>().isFilled && !hole.GetComponent<Hole>().isVisible)
+            {
+                CreateIndicator(hole.transform.position, gameObject.transform.position);
+            }
+        }
+    }
+
+    private void CreateIndicator(Vector3 holePos, Vector3 playerPos)
+    {
+        // TOP
+        Debug.Log($"holePos.y: {holePos.y}");
+        Debug.Log($"playerPos.y: {playerPos.y}");
+        Debug.Log($"holePos.y: {holePos.y}");
+        var cameraHeight = Camera.main.orthographicSize;
+        Debug.Log($"cameraHeight: {cameraHeight}");
+        if (holePos.y - playerPos.y > cameraHeight)
+        {
+            var newIndicator = Instantiate(IndicatorPrefab);
+            newIndicator.transform.position = new Vector3(playerPos.x, playerPos.y + cameraHeight, 0);
+            indicators.Add(newIndicator);
+        }
+
+        // LEFT
+        // DOWN
+        if (playerPos.y - holePos.y > cameraHeight)
+        {
+            var newIndicator = Instantiate(IndicatorPrefab);
+            newIndicator.transform.position = new Vector3(playerPos.x, playerPos.y - cameraHeight, 0);
+            indicators.Add(newIndicator);
+        }
+        // RIGHT
     }
 
     public void UseItems()
@@ -175,6 +224,11 @@ public class Player : MonoBehaviour, IMovable
             ScrapCount++;
             Debug.Log(ScrapCount);
         }
+    }
+
+    public void AddNewHole(GameObject newHole)
+    {
+        RecalculateIndicators();
     }
 }
 
