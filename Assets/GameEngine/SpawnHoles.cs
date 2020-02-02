@@ -9,7 +9,7 @@ public class SpawnHoles : MonoBehaviour
     private List<GameObject> PlacedHoles;
 
     [SerializeField]
-    private float period = 4.0f;
+    private float period;
 
     [SerializeField]
     private Transform holePrefab;
@@ -74,5 +74,10 @@ public class SpawnHoles : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void FreeHole(GameObject hole)
+    {
+        PlacedHoles.Remove(hole);
     }
 }

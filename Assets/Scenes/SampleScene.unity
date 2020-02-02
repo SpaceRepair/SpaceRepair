@@ -2317,7 +2317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ddb99e2185d47f8a262ff4d8a210e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  period: 10
+  period: 5
   holePrefab: {fileID: 1629376349561238185, guid: 1edd557222b0e0f4db08fd4e954647ac,
     type: 3}
   holePrefab2: {fileID: 8708620174358958539, guid: b44a79987e9e64a1297d2c653be6c93d,
@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178307471b32244de8b761a5f1101bd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnInterval: 3
+  SpawnInterval: 2
   scrapPrefabs:
   - {fileID: 2820177719653980734, guid: 84d511cdce44588419966f6d387be319, type: 3}
   - {fileID: 675931712620034390, guid: 61a7726a94b9a4a40a3c785507ebdfe9, type: 3}
@@ -3629,7 +3629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Score
 --- !u!222 &1108053102
 CanvasRenderer:
   m_ObjectHideFlags: 0
