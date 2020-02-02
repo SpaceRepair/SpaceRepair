@@ -26,7 +26,7 @@ public class ItemSpawnManager : MonoBehaviour
     {
         while (GameManager.GameRunning)
         {
-            if (placedScraps.Keys.Count < positions.Count)
+            if (placedScraps.Keys.Count < positions.Count && placedScraps.Count <= 3)
             {
                 var position = positions[random.Next(0, positions.Count)].transform;
                 while (placedScraps.ContainsKey(position))
