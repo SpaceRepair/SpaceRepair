@@ -1,0 +1,667 @@
+fileFormatVersion: 2
+guid: 53c56713e316afc44bf0a4a5d8ae15bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6775113692655244310
+    second: einaaukstyn_0
+  - first:
+      213: 996886269243902950
+    second: einaaukstyn_1
+  - first:
+      213: 3591957327314254736
+    second: einaaukstyn_2
+  - first:
+      213: -2940178828599729025
+    second: einaaukstyn_3
+  - first:
+      213: 5669582529073986606
+    second: einaaukstyn_4
+  - first:
+      213: -3570558739715698301
+    second: einaaukstyn_5
+  - first:
+      213: -4227899536020674002
+    second: einaaukstyn_6
+  - first:
+      213: 4322310647836105080
+    second: einaaukstyn_7
+  - first:
+      213: -7184868368635114650
+    second: einaaukstyn_8
+  - first:
+      213: -3315541691415106426
+    second: einaaukstyn_9
+  - first:
+      213: 185171068597620898
+    second: einaaukstyn_10
+  - first:
+      213: 2172213981374992658
+    second: einaaukstyn_11
+  - first:
+      213: -4690992688772951233
+    second: einaaukstyn_12
+  - first:
+      213: 8588970950617308052
+    second: einaaukstyn_13
+  - first:
+      213: 8448653508453810698
+    second: einaaukstyn_14
+  - first:
+      213: -5023629575830182924
+    second: einaaukstyn_15
+  - first:
+      213: 1026430690836885081
+    second: einaaukstyn_16
+  - first:
+      213: 4760461861104047047
+    second: einaaukstyn_17
+  - first:
+      213: 2418458698736649139
+    second: einaaukstyn_18
+  - first:
+      213: -5410781106671640798
+    second: einaaukstyn_19
+  - first:
+      213: -4608208209594861566
+    second: einaaukstyn_20
+  - first:
+      213: -2792058211773621287
+    second: einaaukstyn_21
+  - first:
+      213: -7159613921164768657
+    second: einaaukstyn_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: einaaukstyn_0
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1682
+        width: 390
+        height: 654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb266c1ef5f9f1a0800000000000000
+      internalID: -6775113692655244310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_1
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1680
+        width: 395
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb4fb7b7c6a5dd00800000000000000
+      internalID: 996886269243902950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_2
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 1675
+        width: 401
+        height: 654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b7dee782239d130800000000000000
+      internalID: 3591957327314254736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_3
+      rect:
+        serializedVersion: 2
+        x: 3562
+        y: 1670
+        width: 406
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f746031eee26237d0800000000000000
+      internalID: -2940178828599729025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_4
+      rect:
+        serializedVersion: 2
+        x: 4638
+        y: 1665
+        width: 411
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c373e75476eae40800000000000000
+      internalID: 5669582529073986606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_5
+      rect:
+        serializedVersion: 2
+        x: 5719
+        y: 1660
+        width: 411
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381549d6eb3d27ec0800000000000000
+      internalID: -3570558739715698301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_6
+      rect:
+        serializedVersion: 2
+        x: 6791
+        y: 1659
+        width: 426
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ae279b5cb7355c0800000000000000
+      internalID: -4227899536020674002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_7
+      rect:
+        serializedVersion: 2
+        x: 7876
+        y: 1654
+        width: 422
+        height: 669
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879d82532aeebfb30800000000000000
+      internalID: 4322310647836105080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_8
+      rect:
+        serializedVersion: 2
+        x: 8952
+        y: 1654
+        width: 426
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b409929483a4c90800000000000000
+      internalID: -7184868368635114650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_9
+      rect:
+        serializedVersion: 2
+        x: 10033
+        y: 1654
+        width: 422
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c643de564dcf1d0800000000000000
+      internalID: -3315541691415106426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 847
+        width: 418
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0d0761b1cd19200800000000000000
+      internalID: 185171068597620898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 852
+        width: 411
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2115eff6b11452e10800000000000000
+      internalID: 2172213981374992658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_12
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 858
+        width: 401
+        height: 654
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33dbb5e00f36eeb0800000000000000
+      internalID: -4690992688772951233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_13
+      rect:
+        serializedVersion: 2
+        x: 3573
+        y: 857
+        width: 390
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b91b1c297223770800000000000000
+      internalID: 8588970950617308052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_14
+      rect:
+        serializedVersion: 2
+        x: 4659
+        y: 847
+        width: 380
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a024fb16a95af3570800000000000000
+      internalID: 8448653508453810698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_15
+      rect:
+        serializedVersion: 2
+        x: 5740
+        y: 842
+        width: 374
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3ee71648b784ab0800000000000000
+      internalID: -5023629575830182924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_16
+      rect:
+        serializedVersion: 2
+        x: 6822
+        y: 842
+        width: 368
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e24e9664d9e3e00800000000000000
+      internalID: 1026430690836885081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_17
+      rect:
+        serializedVersion: 2
+        x: 7902
+        y: 842
+        width: 369
+        height: 685
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3d6e537de801240800000000000000
+      internalID: 4760461861104047047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_18
+      rect:
+        serializedVersion: 2
+        x: 8983
+        y: 842
+        width: 369
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3c62a7f57109120800000000000000
+      internalID: 2418458698736649139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_19
+      rect:
+        serializedVersion: 2
+        x: 10059
+        y: 847
+        width: 374
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f1173404b09e4b0800000000000000
+      internalID: -5410781106671640798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_20
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 35
+        width: 380
+        height: 669
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2083f087c0b5c00c0800000000000000
+      internalID: -4608208209594861566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_21
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 45
+        width: 390
+        height: 659
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db550f69dd9049d0800000000000000
+      internalID: -2792058211773621287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: einaaukstyn_22
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 43
+        width: 390
+        height: 661
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a480c6211f3ac90800000000000000
+      internalID: -7159613921164768657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
