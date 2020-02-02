@@ -85,6 +85,8 @@ public class Hole : MonoBehaviour
                 GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
                 Destroy(gameObject);
                 isFilled = true;
+
+                // TODO: Atlaisvinti skylės atsiradimo vietą.
             }
             else
             {
