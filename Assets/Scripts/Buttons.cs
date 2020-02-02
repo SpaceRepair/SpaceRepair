@@ -18,6 +18,10 @@ public class Buttons : MonoBehaviour
     {
         joystick.SetActive(false);
         buttonForAndroid.SetActive(false);
+
+        #if UNITY_ANDROID
+            ShowMobileInput();
+        #endif
     }
 
     // Update is called once per frame
