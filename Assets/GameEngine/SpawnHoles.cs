@@ -25,6 +25,7 @@ public class SpawnHoles : MonoBehaviour
         holes = GameObject.FindGameObjectsWithTag("Hole");
         PlacedHoles = new List<GameObject>();
         damageController = GameObject.Find("DamageBar").GetComponent<Damage>();
+        SpawnAHole( holes[Random.Range(0, holes.Length)] );
     }
 
     // Update is called once per frame

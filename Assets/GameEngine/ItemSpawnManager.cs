@@ -16,10 +16,13 @@ public class ItemSpawnManager : MonoBehaviour
     private static Dictionary<Transform, Scrap> placedScraps;
     private System.Random random = new System.Random();
 
+    public int MaxPlacedScraps = 4;
+
     // Start is called before the first frame update
     void Start()
     {
         placedScraps = new Dictionary<Transform, Scrap>();
+        SpawnItem();
         StartCoroutine(Spawn());
     }
 
@@ -27,21 +30,26 @@ public class ItemSpawnManager : MonoBehaviour
     {
         while (GameManager.GameRunning)
         {
-            if (placedScraps.Keys.Count < positions.Count && placedScraps.Count <= 3)
+            if (placedScraps.Keys.Count < positions.Count && placedScraps.Count <= MaxPlacedScraps)
             {
-                var position = positions[random.Next(0, positions.Count)].transform;
-                while (placedScraps.ContainsKey(position))
-                {
-                    position = positions[random.Next(0, positions.Count)].transform;
-                }
-
-                var scrap = Instantiate(scrapPrefabs[random.Next(0, scrapPrefabs.Count)]);
-                scrap.transform.position = position.position;
-                placedScraps.Add(position, scrap);
+                SpawnItem();
             }
 
             yield return new WaitForSeconds(SpawnInterval);
         }
+    }
+
+    private void SpawnItem()
+    {
+        var position = positions[random.Next(0, positions.Count)].transform;
+        while (placedScraps.ContainsKey(position))
+        {
+            position = positions[random.Next(0, positions.Count)].transform;
+        }
+
+        var scrap = Instantiate(scrapPrefabs[random.Next(0, scrapPrefabs.Count)]);
+        scrap.transform.position = position.position;
+        placedScraps.Add(position, scrap);
     }
 
     public static void PickUpScrap(Scrap scrap)

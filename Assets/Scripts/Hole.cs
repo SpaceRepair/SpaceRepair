@@ -8,7 +8,7 @@ public class Hole : MonoBehaviour
 
     private int CurrentHp { get; set; }
 
-    private int MaxHp { get; set; } = 2;
+    public int MaxHp = 3;
 
     public bool ConsoleType = false;
 
@@ -48,22 +48,6 @@ public class Hole : MonoBehaviour
         isVisible = false;
     }
 
-    public void FillMyself(GameObject scrap)
-    {
-        //scrap.transform.parent = transform;
-        //scrap.transform.position = new Vector2(0f, 0f);
-        var renderer = GetComponent<SpriteRenderer>();
-        // NOT WORKING
-        // scrap.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-        // scrap.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-        //scrap.transform.ve
-        if (!ConsoleType)
-        {
-            renderer.material.SetColor("_Color", new Color(1f, 1f, 1f, 0.5f));
-            scrap.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
-        }
-    }
-
     public void DealDamage()
     {
         CurrentHp--;
@@ -79,8 +63,7 @@ public class Hole : MonoBehaviour
         }
         else
         {
-            var scale = CurrentHp / (float)MaxHp;
-            if (scale == 0)
+            if (CurrentHp == 0)
             {
                 GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
                 Destroy(gameObject);
@@ -90,7 +73,7 @@ public class Hole : MonoBehaviour
             }
             else
             {
-                transform.localScale = new Vector2(scale, scale);
+                transform.localScale = new Vector2(transform.localScale.x * 0.8f, transform.localScale.x * 0.8f);
             }
         }
     }

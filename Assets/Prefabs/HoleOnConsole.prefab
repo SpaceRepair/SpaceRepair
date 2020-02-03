@@ -97,6 +97,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerStanding: 0
+  MaxHp: 5
+  ConsoleType: 0
+  FixedConsoleImage: {fileID: 0}
+  SecretWall: {fileID: 0}
+  isFilled: 0
+  isVisible: 0
 --- !u!61 &3965329650380761037
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -114,7 +120,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 7.97, y: 4.91}
+    oldSize: {x: 2.6566668, y: 1.6366667}
     newSize: {x: 7.72, y: 6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
