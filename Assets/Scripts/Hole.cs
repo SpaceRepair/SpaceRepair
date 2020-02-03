@@ -18,6 +18,8 @@ public class Hole : MonoBehaviour
     public bool isFilled = false;
     public bool isVisible = false;
 
+    public float DamageAmount = 0.1f;
+
     void Start()
     {
         CurrentHp = MaxHp;
@@ -55,7 +57,7 @@ public class Hole : MonoBehaviour
         {
             if (CurrentHp == 0)
             {
-                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
+                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(DamageAmount);
                 GetComponent<SpriteRenderer>().sprite = FixedConsoleImage;
                 isFilled = true;
                 SecretWall.transform.localScale = new Vector3(1,30,1);
@@ -65,7 +67,7 @@ public class Hole : MonoBehaviour
         {
             if (CurrentHp == 0)
             {
-                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(0.1f);
+                GameObject.Find("DamageBar").GetComponent<Damage>().RemoveDamage(DamageAmount);
                 Destroy(gameObject);
                 isFilled = true;
 

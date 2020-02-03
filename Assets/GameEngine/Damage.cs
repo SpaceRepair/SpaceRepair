@@ -7,14 +7,13 @@ public class Damage : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField] private Image damageBar;
-    [SerializeField] private float maxDamage;
+    public float maxDamage = 1f; // Kiek daugiausiai zalos gali spaceship gaut.
 
     public GameObject GameOverScreen;
     
     // Start is called before the first frame update
     void Start()
     {
-        maxDamage = 1f; // Kiek daugiausiai zalos gali spaceship gaut.
         damage = 0; // Pradzioj žaidimo laivas sveikas.
         UpdateDamage();
     }

@@ -39,10 +39,10 @@ public class SpawnHoles : MonoBehaviour
         }
     }
 
-    private void SpawnAHole(GameObject hole)
+    private void SpawnAHole(GameObject holePlace)
     {
         //Debug.Log("Positions: " + hole.transform.position.x + " " + hole.transform.position.y);
-        if (! HoleExists(hole))
+        if (! HoleExists(holePlace))
         {
             Transform newHole;
             int number = Random.Range(0, 2);
@@ -55,11 +55,12 @@ public class SpawnHoles : MonoBehaviour
                 newHole = Instantiate(holePrefab2);
             }
 
-            newHole.transform.position = new Vector3(hole.transform.position.x, hole.transform.position.y, 0);
-            PlacedHoles.Add(hole);
+            newHole.transform.position = new Vector3(holePlace.transform.position.x, holePlace.transform.position.y, 0);
+            PlacedHoles.Add(holePlace);
             var player = GameObject.Find("Player").GetComponent<Player>();
             player.AddNewHole(newHole.gameObject);
-            damageController.DealDamage(0.2f);
+            var damageAmount = newHole.GetComponent<Hole>().DamageAmount;
+            damageController.DealDamage(damageAmount);
 
         }
     }

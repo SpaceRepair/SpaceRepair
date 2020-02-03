@@ -103,6 +103,7 @@ MonoBehaviour:
   SecretWall: {fileID: 0}
   isFilled: 0
   isVisible: 0
+  DamageAmount: 0.5
 --- !u!61 &3965329650380761037
 BoxCollider2D:
   m_ObjectHideFlags: 0
