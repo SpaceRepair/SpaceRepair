@@ -13,12 +13,13 @@ public class ItemSpawnManager : MonoBehaviour
     [SerializeField]
     public List<GameObject> positions;
 
-    private static Dictionary<Transform, Scrap> placedScraps = new Dictionary<Transform, Scrap>();
+    private static Dictionary<Transform, Scrap> placedScraps;
     private System.Random random = new System.Random();
 
     // Start is called before the first frame update
     void Start()
     {
+        placedScraps = new Dictionary<Transform, Scrap>();
         StartCoroutine(Spawn());
     }
 
